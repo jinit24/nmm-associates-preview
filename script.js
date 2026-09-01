@@ -1,10 +1,3 @@
-const menuButton = document.querySelector('.menu-button');
-const nav = document.querySelector('.nav');
-menuButton?.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(open));
-});
-
 const requestForm = document.querySelector('#request-form');
 if (requestForm) {
   const panels = [...requestForm.querySelectorAll('.form-panel')];
